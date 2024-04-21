@@ -21,12 +21,12 @@ app.use(
 
 mongoose.connect(db_url);
 const Db = mongoose.connection;
-
+ 
 try {
   Db.on("open", (req, res) => {
     console.log("mongoose is connected!!");
   });
-} catch (err) {
+} catch (err) { 
   console.log(err);
 }
 

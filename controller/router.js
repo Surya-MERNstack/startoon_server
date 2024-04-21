@@ -4,6 +4,9 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const verified = require("../verify/verifyToken");
 const Admin = require("../models/Admin");
+const dotenv = require('dotenv');
+
+dotenv.config();
 const secretKey = process.env.SecretKey;
 
 
